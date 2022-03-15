@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">FINAL ASSIGNMENTS</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Bluetooth Scanner </string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_plt_recog_result">Plant Detector</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="permission_deny_text">Required permissions denied. Exiting.</string>
+    <string name="hint_minute">Minute</string>
+    <string name="message_minutes">Please Enter Minutes...</string>
+
+    <!--String used for plant detection -->
+    <string name="face_recognize">Pick your Picture</string>
+    <string name="plant_main_text">Choose a Model</string>
+    <string name="google_api">Google API</string>
+    <string name="tensor_flow">Tensor Flow</string>
+
+    <!-- String used for Bluetooth application -->
+    <string name="none_found">No devices found</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+
+</resources>

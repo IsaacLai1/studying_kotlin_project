@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable-v24/ic_audiotrack.xml" value="0.2703125" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable-v24/ic_back_arrow.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.14270833333333333" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable-v24/ic_list_view.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable-v24/ic_pause_circle.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable-v24/ic_play_circle.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable-v24/ic_skip_next.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable-v24/ic_skip_previous.xml" value="0.1421875" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable-v24/seek_thumb.xml" value="0.1421875" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable/background_owl.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable/button_bluetooth_devices.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable/ic_ai_camera.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable/ic_ai_collection.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable/ic_ai_flash_off.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable/ic_ai_next.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable/ic_ai_plant_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable/ic_ai_switch_camera.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable/ic_app_background.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable/ic_bg_owl_background.xml" value="0.1421875" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable/ic_button_capture.xml" value="0.2703125" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable/ic_button_circle.xml" value="0.4794921875" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable/ic_button_plant.xml" value="0.2703125" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable/ic_button_rnd_grad.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable/ic_button_rounded_border.xml" value="0.2703125" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable/ic_capture_button.xml" value="0.1" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14270833333333333" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable/ic_prgss_bar.xml" value="0.14270833333333333" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable/ic_round_corner_button.xml" value="0.2703125" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable/ic_rounded_border_button.xml" value="0.2703125" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable/ic_timer_circle.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable/ic_timer_circle_dark.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable/ic_timer_circle_light.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/drawable/rounded_border_button.xml" value="0.2703125" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/activity_eco_list_item.xml" value="0.1" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/activity_eco_recy_view.xml" value="0.1" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/activity_ecoli_genomes.xml" value="0.1" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/activity_face_recog.xml" value="0.264" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/activity_face_recog_cam.xml" value="0.2" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/activity_face_recog_gal.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/activity_face_reg_gal.xml" value="0.1" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/activity_main2.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/activity_music_gen.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/activity_music_gen2.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/activity_music_gen_result.xml" value="0.2" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/activity_music_gen_rs_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/activity_plant_recog.xml" value="0.264" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/activity_plt_rc_result.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/fragment_blank.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/fragment_dashboard.xml" value="0.264" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/fragment_frg_cam.xml" value="0.1" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/fragment_notifications.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/fragment_plant_recog_result.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/fragment_player_view.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/fragment_plt_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/fragment_plt_list_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/fragment_plt_list_list.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/fragment_plt_list_show.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/fragment_song_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/fragment_song_list.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/fragment_song_list2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/fragment_song_list_list.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/item_bluetooth_devices.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/item_plant_recognize.xml" value="0.12916666666666668" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/plt_result_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/layout/recognition_item.xml" value="0.1" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/menu/appbar.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/menu/bottom_nav_menu.xml" value="0.12291666666666666" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/menu/menu.xml" value="0.1265625" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/mipmap-anydpi-v26/ic_bg_owl.xml" value="0.14270833333333333" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/mipmap-anydpi-v26/ic_bg_owl_round.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/dialg/AndroidStudioProjects/Test/app/src/main/res/xml/file_paths.xml" value="0.13020833333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

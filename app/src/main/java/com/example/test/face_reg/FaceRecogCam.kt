@@ -51,7 +51,7 @@ class FaceRecogCam : AppCompatActivity() {
     }
 
     private fun flipCamera() {
-        binding.btnSwitch.setOnClickListener {
+        binding.ivSwitch.setOnClickListener {
             cameraControl.changeCameraSelector()
         }
     }

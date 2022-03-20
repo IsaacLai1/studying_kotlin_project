@@ -8,6 +8,27 @@
     android:focusable="true"
     tools:context=".music_app.MusicGenActivity">
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glCenterHor"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.39" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/artworkView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="4sp"
+        android:src="@drawable/background_music_main"
+        app:civ_border_color="?attr/colorPrimary"
+        app:civ_border_overlay="true"
+        app:civ_border_width="2sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/glCenterHor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/blurBg"
         android:layout_width="0dp"
@@ -21,6 +42,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!--    <TextView-->
+    <!--        android:id="@+id/backBtn"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        android:layout_marginStart="16dp"-->
+    <!--        android:background="@drawable/shape_bg_green_border_10"-->
+    <!--        android:layout_marginTop="18dp"-->
+    <!--        app:drawableStartCompat="@drawable/ic_back_arrow" />-->
+    <!--    -->
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/ivBack"
         android:layout_width="24dp"
@@ -33,34 +65,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/artworkView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:padding="4sp"
-        android:src="@drawable/background_music_main"
-        app:civ_border_color="?attr/colorPrimary"
-        app:civ_border_overlay="true"
-        app:civ_border_width="2sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.8"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0"
-        app:layout_constraintWidth_percent="0.8" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/controlsWrapper"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
         android:layout_marginBottom="24dp"
         android:background="#996200ee"
         android:padding="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintWidth_percent="0.9">
+        app:layout_constraintStart_toStartOf="@id/glCenterHor"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/titleView"

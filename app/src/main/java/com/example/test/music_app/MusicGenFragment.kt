@@ -34,7 +34,7 @@ class MusicGenFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         songViewModel = ViewModelProvider(requireActivity()).get(SongViewModel::class.java)
-        binding.backBtn.setOnClickListener { requireActivity().onBackPressed() }
+        binding.ivBack.setOnClickListener { requireActivity().onBackPressed() }
         gettingPlayer()
     }
 

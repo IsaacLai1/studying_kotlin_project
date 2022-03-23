@@ -61,11 +61,28 @@ class MusicGenActivity : AppCompatActivity() {
         ) { result: Boolean ->
             if (result) {
                 fetchSongs()
+            } else {
+                respondOnUserPermissionActs()
             }
-            else {respondOnUserPermissionActs()}
         }
         storagePermissionLauncher!!.launch(Manifest.permission.WRITE_EXTERNAL_STORAGE)
         eventHandle()
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        val position = exoPlayer?.currentPosition
+        position?.let {
+            outState.putLong("player", position)
+        }
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        exoPlayer?.seekTo(
+            savedInstanceState.getLong("player")
+        )
+
     }
 
     override fun onDestroy() {
@@ -79,8 +96,10 @@ class MusicGenActivity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.M)
     private fun respondOnUserPermissionActs() {
         when {
-            ContextCompat.checkSelfPermission(this,
-                Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED -> {
+            ContextCompat.checkSelfPermission(
+                this,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE
+            ) == PackageManager.PERMISSION_GRANTED -> {
                 fetchSongs()
             }
             shouldShowRequestPermissionRationale(Manifest.permission.WRITE_EXTERNAL_STORAGE) -> {
@@ -88,11 +107,15 @@ class MusicGenActivity : AppCompatActivity() {
                     .setTitle("Requesting Permission")
                     .setMessage("Allow us to fetch & show songs on your device")
                     .setPositiveButton("Allow ") { _, _ ->
-                        storagePermissionLauncher!!.launch(Manifest.permission.WRITE_EXTERNAL_STORAGE)}
+                        storagePermissionLauncher!!.launch(Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                    }
                     .setNegativeButton("Don't Allow") { dialogInterface, _ ->
-                        Toast.makeText(applicationContext, " You denied to fetch songs",
-                            Toast.LENGTH_LONG).show()
-                        dialogInterface.dismiss()}
+                        Toast.makeText(
+                            applicationContext, " You denied to fetch songs",
+                            Toast.LENGTH_LONG
+                        ).show()
+                        dialogInterface.dismiss()
+                    }
                     .show()
             }
             else -> {
@@ -132,14 +155,19 @@ class MusicGenActivity : AppCompatActivity() {
                 val duration = cursor.getInt(durationCursor)
                 val size = cursor.getInt(sizeCursor)
                 val albumId = cursor.getLong(albumIdCursor)
-                val uri = ContentUris.withAppendedId(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI, id)
-                val albumartUri = ContentUris.withAppendedId(Uri.parse("content://media/external/audio/albumart"), albumId)
+                val uri =
+                    ContentUris.withAppendedId(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI, id)
+                val albumartUri = ContentUris.withAppendedId(
+                    Uri.parse("content://media/external/audio/albumart"),
+                    albumId
+                )
                 val song = Song(id, uri, name, duration, size.toLong(), albumId, albumartUri)
                 songs.add(song)
             }
             showSongs(songs)
         }
     }
+
     private fun showSongs(songs: List<Song>) {
         val layoutManager = GridLayoutManager(this, gridSpanSize)
         binding.recyclerview.layoutManager = layoutManager
@@ -210,8 +238,11 @@ class MusicGenActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == R.id.listview) {
             gridSpanSize =
-                if (gridSpanSize == 1) {2}
-                else {1}
+                if (gridSpanSize == 1) {
+                    2
+                } else {
+                    1
+                }
         }
         val layoutManager = (binding.recyclerview.layoutManager as GridLayoutManager)
         layoutManager.spanCount = gridSpanSize

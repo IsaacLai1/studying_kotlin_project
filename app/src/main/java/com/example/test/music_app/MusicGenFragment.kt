@@ -26,7 +26,8 @@ class MusicGenFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?): View {
+        savedInstanceState: Bundle?
+    ): View {
         _binding = FragmentPlayerViewBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -65,7 +66,8 @@ class MusicGenFragment : Fragment() {
 
             override fun onPlaybackStateChanged(playbackState: Int) {
                 if (playbackState == ExoPlayer.STATE_READY) {
-                    binding.titleView.text = Objects.requireNonNull(player.currentMediaItem)?.mediaMetadata?.title
+                    binding.titleView.text =
+                        Objects.requireNonNull(player.currentMediaItem)?.mediaMetadata?.title
                     binding.playPauseBtn.setImageResource(R.drawable.ic_pause_circle)
                     binding.progressDuration.text = getReadableTime(player.currentPosition.toInt())
                     binding.seekBar.progress = player.currentPosition.toInt()
@@ -81,7 +83,8 @@ class MusicGenFragment : Fragment() {
         })
 
         if (player.isPlaying) {
-            binding.titleView.text = Objects.requireNonNull(player.currentMediaItem)?.mediaMetadata?.title
+            binding.titleView.text =
+                Objects.requireNonNull(player.currentMediaItem)?.mediaMetadata?.title
             binding.progressDuration.text = getReadableTime(player.currentPosition.toInt())
             binding.seekBar.progress = player.currentPosition.toInt()
             binding.totalDuration.text = getReadableTime(player.duration.toInt())
@@ -127,6 +130,7 @@ class MusicGenFragment : Fragment() {
             override fun onProgressChanged(seekBar: SeekBar, i: Int, b: Boolean) {
                 progressValue = seekBar.progress
             }
+
             override fun onStartTrackingTouch(seekBar: SeekBar) {}
             override fun onStopTrackingTouch(seekBar: SeekBar) {
                 seekBar.progress = progressValue
@@ -175,8 +179,29 @@ class MusicGenFragment : Fragment() {
         val hrs = totalDuration / (1000 * 60 * 60)
         val min = totalDuration % (1000 * 60 * 60) / (1000 * 60)
         val secs = totalDuration % (1000 * 60 * 60) % (1000 * 60 * 60) % (1000 * 60) / 1000
-        time = if (hrs < 1) {"$min:$secs"}
-        else {"$hrs:$min:$secs"}
+        time = if (hrs < 1) {
+            "$min:$secs"
+        } else {
+            "$hrs:$min:$secs"
+        }
         return time
     }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        val position = player?.currentPosition
+        position?.let {
+            outState.putLong("player", position)
+        }
+    }
+
+    override fun onViewStateRestored(savedInstanceState: Bundle?) {
+        super.onViewStateRestored(savedInstanceState)
+        savedInstanceState?.getLong("player")?.let {
+            player?.seekTo(
+                it
+            )
+        }
+    }
+
 }

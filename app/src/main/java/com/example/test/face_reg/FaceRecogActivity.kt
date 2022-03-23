@@ -1,15 +1,20 @@
 package com.example.test.face_reg
 
+import android.app.Activity
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.test.R
 import android.widget.Button
+import androidx.activity.result.contract.ActivityResultContracts
 import com.example.test.databinding.ActivityFaceRecogBinding
 import com.example.test.databinding.ActivityFaceRecogGalBinding
+import java.io.IOException
 
 class FaceRecogActivity : AppCompatActivity() {
     private lateinit var binding: ActivityFaceRecogBinding
+    private var imageUri: Uri? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

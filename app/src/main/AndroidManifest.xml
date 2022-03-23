@@ -30,6 +30,7 @@
             android:value="face" />
 
         <activity
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
             android:name=".music_app.MusicGenActivity"
             android:exported="false" />
         <activity

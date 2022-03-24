@@ -18,8 +18,10 @@
         android:src="@drawable/background_music_main"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/ivBack"
@@ -35,40 +37,39 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/artworkView"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:padding="4sp"
         android:src="@drawable/background_music_main"
-        app:civ_border_color="?attr/colorPrimary"
+        app:civ_border_color="@color/black"
         app:civ_border_overlay="true"
+        android:layout_margin="12dp"
         app:civ_border_width="2sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/controlsWrapper"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.8"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0"
-        app:layout_constraintWidth_percent="0.8" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/controlsWrapper"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:background="#996200ee"
-        android:padding="24dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/shape_bg_black_50_border_10"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintWidth_percent="0.9">
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
             android:id="@+id/titleView"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ellipsize="marquee"
-            android:gravity="center"
-            android:paddingBottom="18dp"
+            android:fontFamily="@font/cera_pro_medim"
+            android:gravity="center_vertical"
             android:singleLine="true"
             android:text="Current Playing Song Name goes here"
             android:textColor="@color/white"
@@ -77,45 +78,49 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <SeekBar
-            android:id="@+id/seekBar"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:paddingStart="8dp"
-            android:paddingEnd="8dp"
-            android:progressTint="@color/teal_200"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/titleView"
-            app:layout_constraintWidth_percent="1" />
-
         <TextView
             android:id="@+id/progressDuration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0:07"
+            android:text="00:00"
+            app:layout_constraintBottom_toBottomOf="@id/seekBar"
             android:textColor="@color/white"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/seekBar" />
+            app:layout_constraintTop_toTopOf="@id/seekBar"
+            app:layout_constraintEnd_toStartOf="@id/seekBar"/>
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="0dp"
+            android:layout_marginHorizontal="4dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:thumbTint="@color/white"
+            app:layout_constraintEnd_toStartOf="@id/totalDuration"
+            app:layout_constraintStart_toEndOf="@id/progressDuration"
+            app:layout_constraintTop_toBottomOf="@id/titleView" />
+
 
         <TextView
             android:id="@+id/totalDuration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="45:00"
+            android:text="00:00"
             android:textColor="@color/white"
             android:textSize="12sp"
-            app:layout_constraintEnd_toEndOf="@id/seekBar"
+            app:layout_constraintBottom_toBottomOf="@id/seekBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/seekBar"
             app:layout_constraintHorizontal_bias="0"
-            app:layout_constraintTop_toBottomOf="@id/seekBar" />
+            app:layout_constraintTop_toTopOf="@id/seekBar" />
 
         <TextView
             android:id="@+id/prevBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="6dp"
             app:drawableStartCompat="@drawable/ic_skip_previous"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/progressDuration" />
@@ -124,7 +129,7 @@
             android:id="@+id/playPauseBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="6dp"
             android:background="#00000000"
             android:src="@drawable/ic_play_circle"
             app:layout_constraintEnd_toStartOf="@id/nextBtn"
@@ -135,7 +140,7 @@
             android:id="@+id/nextBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="6dp"
             android:gravity="end"
             app:drawableEndCompat="@drawable/ic_skip_next"
             app:layout_constraintEnd_toEndOf="parent"

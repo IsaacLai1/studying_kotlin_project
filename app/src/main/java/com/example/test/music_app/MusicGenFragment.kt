@@ -1,3 +1,4 @@
+import android.content.res.Configuration
 import android.os.Bundle
 import android.os.Handler
 import android.view.LayoutInflater
@@ -140,6 +141,11 @@ class MusicGenFragment : Fragment() {
         })
     }
 
+    override fun onConfigurationChanged(newConfig: Configuration) {
+        super.onConfigurationChanged(newConfig)
+        binding.artworkView.setAnimation(loadRotation())
+
+    }
     private fun loadRotation(): Animation? {
         val rotateAnimation = RotateAnimation(
             0F,

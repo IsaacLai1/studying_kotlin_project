@@ -1,78 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/rowItemLayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    android:paddingBottom="5dp"
     android:layout_marginHorizontal="2dp"
-    android:layout_marginVertical="7dp"
-    android:elevation="20dp">
+    android:layout_marginTop="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
     <ImageView
         android:id="@+id/albumart"
         android:layout_width="0dp"
-        android:layout_height="200dp"
-        android:src="@drawable/background_music_main"
+        android:layout_height="180dp"
         android:adjustViewBounds="true"
-        android:scaleType="centerCrop"
+        android:background="@drawable/ripple_click_square"
         android:contentDescription="@string/app_name"
-        app:layout_constraintStart_toStartOf="parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_music_main"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_black_gradient"
+        android:paddingTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginHorizontal="4dp"
+            android:fontFamily="@font/cera_pro_medim"
+            android:maxLines="1"
+            android:text="@string/app_name"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/cera_pro_medim"
+            android:maxLines="1"
+            android:padding="3dp"
+            android:text="12 MB"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginVertical="2dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toEndOf="@id/size"
+            android:background="@color/white"
+            android:fontFamily="@font/cera_pro_medim"
+            android:maxLines="1"
+            android:paddingVertical="2dp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toEndOf="@id/line"
+            android:maxLines="1"
+            android:padding="3dp"
+            android:text="3.5 Min"
+            android:textColor="@color/white" />
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/shape_bg_green_border_8"
+        android:fontFamily="@font/cera_pro_bold"
+        android:gravity="center"
         android:padding="10dp"
         android:text="10"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        android:layout_margin="4dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:maxLines="1"
-        android:alpha="0.7"
-        android:text="@string/app_name"
-        android:background="@color/white"
         android:textColor="@color/black"
-        android:padding="3dp"
-        android:layout_marginBottom="4dp"
-        android:layout_marginHorizontal="4dp"
+        android:textSize="10sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/size"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/size"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:maxLines="1"
-        android:text="12 MB"
-        android:alpha="0.7"
-        android:background="@color/white"
-        android:textColor="@color/black"
-        android:padding="3dp"
-        android:layout_marginBottom="4dp"
-        android:layout_marginStart="4dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/albumart" />
+    <!--    <TextView-->
+    <!--        android:id="@+id/title"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:maxLines="1"-->
+    <!--        android:alpha="0.7"-->
+    <!--        android:text="@string/app_name"-->
+    <!--        android:background="@color/white"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:padding="3dp"-->
+    <!--        android:layout_marginBottom="4dp"-->
+    <!--        android:layout_marginHorizontal="4dp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/size"/>-->
 
-    <TextView
-        android:id="@+id/duration"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:maxLines="1"
-        app:layout_constraintStart_toEndOf="@id/size"
-        app:layout_constraintBottom_toBottomOf="@id/albumart"
-        android:text="3.5 Min"
-        android:alpha="0.7"
-        android:background="@color/white"
-        android:textColor="@color/black"
-        android:padding="3dp"
-        android:layout_marginBottom="4dp"
-        android:layout_marginStart="4dp"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--    <TextView-->
+    <!--        android:id="@+id/size"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:maxLines="1"-->
+    <!--        android:text="12 MB"-->
+    <!--        android:alpha="0.7"-->
+    <!--        android:background="@color/white"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:padding="3dp"-->
+    <!--        android:layout_marginBottom="4dp"-->
+    <!--        android:layout_marginStart="4dp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/albumart" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/duration"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:maxLines="1"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/size"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/albumart"-->
+    <!--        android:text="3.5 Min"-->
+    <!--        android:alpha="0.7"-->
+    <!--        android:background="@color/white"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:padding="3dp"-->
+    <!--        android:layout_marginBottom="4dp"-->
+    <!--        android:layout_marginStart="4dp"/>-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

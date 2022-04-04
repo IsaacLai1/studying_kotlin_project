@@ -4,33 +4,41 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/drawable-v24/ripple_click_square.xml" value="0.1935" />
-        <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/drawable/background_app_gradient.xml" value="0.209" />
+        <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/drawable/border_13_white_fill.xml" value="0.209" />
+        <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/drawable/border_4_gradient_yellow.xml" value="0.209" />
         <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/drawable/button_camera_capture.xml" value="0.209" />
         <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/drawable/button_rounded_border.xml" value="0.209" />
+        <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/drawable/ic_black_left_arrow.xml" value="0.209" />
+        <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/drawable/ic_image_6.xml" value="0.209" />
+        <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/drawable/ic_start_drawble_username.xml" value="0.209" />
+        <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/drawable/image_5.xml" value="0.209" />
         <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/drawable/ripple_button_rounded_border.xml" value="0.209" />
+        <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/drawable/ripple_click_square_circle.xml" value="0.209" />
         <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/drawable/shape_bg_back_border_15.xml" value="0.209" />
-        <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/drawable/shape_bg_black_50_border_10.xml" value="0.209" />
         <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/drawable/shape_bg_black_gradient.xml" value="0.209" />
-        <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/drawable/shape_bg_green_50_border_10.xml" value="0.209" />
         <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/drawable/shape_bg_green_border_10.xml" value="0.209" />
-        <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/drawable/shape_bg_green_border_8.xml" value="0.209" />
-        <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/drawable/shape_bg_white_border_10.xml" value="0.209" />
         <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/layout-land/activity_face_recog.xml" value="0.2" />
         <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/layout-land/activity_face_recog_cam.xml" value="0.2154024319629415" />
         <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/layout-land/activity_plant_recog.xml" value="0.2" />
         <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/layout-land/fragment_home.xml" value="0.2" />
+        <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/layout-land/fragment_login.xml" value="0.30687830687830686" />
         <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/layout-land/fragment_player_view.xml" value="0.18" />
+        <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/layout-land/fragment_register.xml" value="0.18" />
         <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/layout/activity_face_recog.xml" value="0.358695652173913" />
         <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/layout/activity_face_recog_cam.xml" value="0.358695652173913" />
         <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/layout/activity_face_recog_gal.xml" value="0.358695652173913" />
+        <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/layout/activity_main.xml" value="0.1762917933130699" />
         <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/layout/activity_music_gen.xml" value="0.22" />
-        <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/layout/activity_music_gen_rs_item.xml" value="0.3473389355742297" />
+        <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/layout/activity_music_gen_rs_item.xml" value="0.1" />
         <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/layout/activity_plant_recog.xml" value="0.358695652173913" />
         <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/layout/activity_plt_rc_result.xml" value="0.358695652173913" />
+        <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/layout/activity_sign_in.xml" value="0.358695652173913" />
         <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/layout/fragment_dashboard.xml" value="0.358695652173913" />
-        <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/layout/fragment_home.xml" value="0.18" />
-        <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/layout/fragment_player_view.xml" value="0.2" />
+        <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/layout/fragment_log_in.xml" value="0.358695652173913" />
+        <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/layout/fragment_player_view.xml" value="0.16" />
+        <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/layout/fragment_sign_in.xml" value="0.358695652173913" />
         <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/layout/item_bluetooth_devices.xml" value="0.358695652173913" />
         <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/layout/item_plant_recognize.xml" value="0.358695652173913" />
         <entry key="..\:/AnroidStudioProject/OutSource/studying_kotlin_project/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3625" />

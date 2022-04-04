@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "59059542589",
+    "project_id": "assignment-android-issaclai",
+    "storage_bucket": "assignment-android-issaclai.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59059542589:android:db62eeb74e809665b2e854",
+        "android_client_info": {
+          "package_name": "com.example.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "59059542589-s7p61fkg2a2ihlgfo1r2n02qfn5lp7f3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCAqC1MTcITn54APenSV9cihYJS-4MG3I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "59059542589-s7p61fkg2a2ihlgfo1r2n02qfn5lp7f3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

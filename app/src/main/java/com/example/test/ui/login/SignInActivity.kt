@@ -1,10 +1,12 @@
 package com.example.test.ui.login
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import com.example.test.MainActivity
 import com.example.test.databinding.ActivitySignInBinding
 import com.google.firebase.auth.FirebaseAuth
 
@@ -69,7 +71,9 @@ class SignInActivity : AppCompatActivity() {
                 if (it.isSuccessful) {
 
                     Toast.makeText(this, "Sign up success!", Toast.LENGTH_SHORT).show()
-                    onBackPressed()
+//                    onBackPressed()
+                    startActivity(Intent(this, MainActivity::class.java))
+
                 }
             }.addOnFailureListener {
                 Toast.makeText(this, it.message, Toast.LENGTH_SHORT).show()
